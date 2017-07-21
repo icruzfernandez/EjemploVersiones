@@ -23,6 +23,8 @@ Partial Class frmejemplo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtmensaje = New System.Windows.Forms.TextBox()
+        Me.btnmensaje = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -35,11 +37,29 @@ Partial Class frmejemplo
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Hola"
         '
+        'txtmensaje
+        '
+        Me.txtmensaje.Location = New System.Drawing.Point(90, 107)
+        Me.txtmensaje.Name = "txtmensaje"
+        Me.txtmensaje.Size = New System.Drawing.Size(135, 20)
+        Me.txtmensaje.TabIndex = 1
+        '
+        'btnmensaje
+        '
+        Me.btnmensaje.Location = New System.Drawing.Point(85, 163)
+        Me.btnmensaje.Name = "btnmensaje"
+        Me.btnmensaje.Size = New System.Drawing.Size(149, 44)
+        Me.btnmensaje.TabIndex = 2
+        Me.btnmensaje.Text = "Mostrar Mensaje"
+        Me.btnmensaje.UseVisualStyleBackColor = True
+        '
         'frmejemplo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.btnmensaje)
+        Me.Controls.Add(Me.txtmensaje)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmejemplo"
         Me.Text = "frmejemplo"
@@ -49,4 +69,6 @@ Partial Class frmejemplo
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtmensaje As TextBox
+    Friend WithEvents btnmensaje As Button
 End Class
